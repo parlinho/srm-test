@@ -1,0 +1,42 @@
+@import "../../../styles/variables.scss";
+
+$icons-path: "../../../../../assets/images/icons/menu/";
+
+.container-sidebar-menu {
+  background-color: $dark-blue;
+
+  &__ul,
+  li p {
+    margin: 0px;
+  }
+
+  &__ul {
+    padding: 0px;
+    li {
+      list-style-type: none;
+      height: 18px;
+      padding: 8px 5px 28px 10px;
+      border-bottom: 1px solid $light-blue;
+
+      i {
+        width: 40px;
+        height: 40px;
+        float: left;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      img.icon-menu {
+        float: left;
+        width: 40px;
+      }
+    }
+
+    a {
+      color: $light-color;
+      margin-top: 9px;
+      display: block;
+      margin-left: 50px;
+    }
+  }
+}

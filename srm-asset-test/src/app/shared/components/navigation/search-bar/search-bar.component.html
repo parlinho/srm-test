@@ -1,3 +1,6 @@
-<p>
-  search-bar works!
-</p>
+<div>
+  <form [formGroup]="searchForm" (ngSubmit)="onSubmit()" class="search-form">
+    <input type="text" formControlName="searchTerms" placeholder="Pesquise Aqui" class="search-form__input input-text">
+    <input type="submit" value="" class="search-form__input input-submit">
+  </form>
+</div>

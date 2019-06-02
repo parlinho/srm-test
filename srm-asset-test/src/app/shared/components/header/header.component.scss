@@ -1,0 +1,9 @@
+@import "../../../shared/styles/variables";
+
+.header-grid{
+    background-color: $light-color;
+    grid-template-rows: 1fr;
+    grid-template-columns: auto 40% 30%;
+    height: 65px;
+    align-items: center;
+}
