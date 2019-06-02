@@ -7,9 +7,7 @@ import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
-    HeaderComponent,
-    SearchBarComponent,
-    SidebarMenuComponent
+    HeaderComponent
   ],
   imports: [
     CommonModule,

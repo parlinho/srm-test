@@ -1,4 +1,4 @@
-import { ManagementComponent } from './components/management/management.component';
+import { ManagementComponent } from './modules/management/management.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 

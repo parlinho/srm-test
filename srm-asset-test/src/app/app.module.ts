@@ -1,5 +1,5 @@
-import { ManagementModule } from './components/management/management.module';
-import { SharedModule } from './components/shared/shared.module';
+import { ManagementModule } from './modules/management/management.module';
+import { SharedModule } from './shared/components/shared.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
