@@ -3,7 +3,33 @@
 .header-grid{
     background-color: $light-color;
     grid-template-rows: 1fr;
-    grid-template-columns: auto 40% 30%;
+    grid-template-columns: 0px auto 40% 30% 0px;
+    grid-column-gap: 15px;
     height: 65px;
     align-items: center;
+
+    grid-template-areas: 
+    "srm-logo"
+    "economic-group-selector"
+    "user-area";
+
+    &__logo{
+        grid-area: srm-logo;
+        grid-column-start: 2;
+        grid-column-end: 2;
+    }
+
+    &__economic-group-selector{
+        grid-area: economic-group-selector;
+        grid-column-start: 3;
+        grid-column-end: 3;
+        grid-row-start: 1;
+    }
+
+    &__user-area{
+        grid-area: user-area;
+        grid-column-start: 4;
+        grid-column-end: 4;
+        grid-row-start: 1;
+    }
 }

@@ -1,22 +1,22 @@
+import { HeaderComponent } from './header/header.component';
+import { HeaderModule } from './header/header.module';
 import { SidebarMenuComponent } from './navigation/sidebar-menu/sidebar-menu.component';
 import { SearchBarComponent } from './navigation/search-bar/search-bar.component';
 import { NavigationModule } from './navigation/navigation.module';
-import { HeaderComponent } from './header/header.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @NgModule({
-  declarations: [
-    HeaderComponent
-  ],
+  declarations: [],
   imports: [
     CommonModule,
-    NavigationModule
+    NavigationModule,
+    HeaderModule
   ],
   exports: [
-    HeaderComponent,
     SearchBarComponent,
-    SidebarMenuComponent
+    SidebarMenuComponent,
+    HeaderComponent
   ]
 })
 export class SharedModule { }
