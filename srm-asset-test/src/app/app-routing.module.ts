@@ -3,9 +3,10 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', component: ManagementComponent }
-
-];
+  {
+    path: '', component: ManagementComponent
+  }
+]
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

@@ -1,6 +1,6 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
-import { Search } from 'src/app/shared/models/search.models';
+import { Search } from 'src/app/shared/models/search.model';
 
 @Component({
   selector: 'app-search-bar',

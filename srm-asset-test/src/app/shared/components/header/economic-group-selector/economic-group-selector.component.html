@@ -1,3 +1,9 @@
-<p>
-  economic-group-selector works!
-</p>
+<form [formGroup]="economicGroupForm" class="economic-group-form">
+  <label for="economicGroup" class="economic-group-form__label">Grupo Econômico: </label>
+  <select type="select" formControlName="groupDescription" name="groupDescription" (change)="onChange($event.target.value)"
+    class="economic-group-form__select">
+    <option value="visao1">Visão Agragada 1</option>
+    <option value="visao2">Visão Agragada 2</option>
+    <option value="visao3">Visão Agragada 3</option>
+  </select>
+</form>

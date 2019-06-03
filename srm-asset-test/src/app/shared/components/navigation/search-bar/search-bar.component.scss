@@ -6,6 +6,10 @@
     background-color: $light-color;
   }
 
+  &__input:focus {
+    outline: none;
+  }
+
   &__input.input-text {
     width: 76%;
     height: 62px;
@@ -19,9 +23,11 @@
     width: 20%;
     height: 64px;
     float: right;
+    cursor: pointer;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 36%;
+    background-size: 17px;
+    border-right: 2px solid $dark-gray;
     background-image: url("../../../../../assets/images/icons/search/search-icon.png");
   }
 }

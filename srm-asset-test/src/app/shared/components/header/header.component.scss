@@ -3,7 +3,7 @@
 .header-grid{
     background-color: $light-color;
     grid-template-rows: 1fr;
-    grid-template-columns: 0px auto 40% 30% 0px;
+    grid-template-columns: 0px auto auto 250px 0px;
     grid-column-gap: 15px;
     height: 65px;
     align-items: center;

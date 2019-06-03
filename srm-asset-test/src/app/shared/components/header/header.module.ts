@@ -1,3 +1,4 @@
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HeaderComponent } from './header.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -10,9 +11,11 @@ import { UserAreaComponent } from './user-area/user-area.component';
     EconomicGroupSelectorComponent,
     UserAreaComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
-  exports:[
+  exports: [
     HeaderComponent,
     EconomicGroupSelectorComponent,
     UserAreaComponent
