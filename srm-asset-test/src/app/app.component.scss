@@ -1,3 +1,5 @@
+@import './shared/styles/variables';
+
 .main-grid {
   grid-template-columns: 0px 15% 85% 0px;
   grid-template-rows: 8.7vh auto;
@@ -33,5 +35,6 @@
     grid-column-start: 3;
     grid-column-end: 3;
     grid-row-start: 2;
+    background-color: $background;
   }
 }
