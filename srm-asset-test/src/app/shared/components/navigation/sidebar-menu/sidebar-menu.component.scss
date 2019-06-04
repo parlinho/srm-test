@@ -15,7 +15,7 @@ $icons-path: "../../../../../assets/images/icons/menu/";
     padding: 0px;
     li {
       list-style-type: none;
-      height: 18px;
+      height: 1.4vw;
       padding: 10px 5px 28px 10px;
       border-bottom: 1px solid $light-blue;
       position: relative;
@@ -30,14 +30,15 @@ $icons-path: "../../../../../assets/images/icons/menu/";
 
       img.icon-menu {
         float: left;
-        width: 40px;
+        width: 2.6vw;
       }
 
       a {
         color: $light-color;
-        margin-top: 9px;
+        margin-top: 0.6vw;
         display: block;
-        margin-left: 50px;
+        margin-left: 3vw;
+        font-size: 15px;
       }
 
       a.active:after {
@@ -52,6 +53,22 @@ $icons-path: "../../../../../assets/images/icons/menu/";
         border-top: 13px solid transparent;
         border-right: 13px solid #ebebeb;
         border-bottom: 13px solid transparent;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .container-sidebar-menu {
+    &__ul {
+      img.icon-menu {
+        display: none;
+      }
+
+      li {
+        a {
+          margin-left: 0vw;
+        }
       }
     }
   }
