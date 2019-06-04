@@ -1,3 +1,4 @@
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AlertListComponent implements OnInit {
 
+  public actionSelect : FormGroup;
+
   constructor() { }
 
   ngOnInit() {
+    this.actionSelect = new FormGroup({
+      'product': new FormControl(null, Validators.required)
+    });
   }
 
 }

@@ -2,7 +2,7 @@
   grid-template-columns: 0px auto auto 0px;
   grid-template-rows: 60px 60px;
   align-items: center;
-  grid-column-gap: 15px;
+  grid-column-gap: 20px;
 
   &__nav,
   &__title {
@@ -21,11 +21,12 @@
     &--image {
       float: left;
       margin: 0px 15px 0px 0px;
+      width: 40px;
     }
 
     &--h1 {
-      font-size: 25px;
-      margin: 10px;
+      font-size: 30px;
+      margin: 0 10px 10px 10px;
     }
   }
 

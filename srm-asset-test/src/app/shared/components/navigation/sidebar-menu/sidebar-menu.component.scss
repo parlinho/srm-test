@@ -18,6 +18,7 @@ $icons-path: "../../../../../assets/images/icons/menu/";
       height: 18px;
       padding: 10px 5px 28px 10px;
       border-bottom: 1px solid $light-blue;
+      position: relative;
 
       i {
         width: 40px;
@@ -31,13 +32,27 @@ $icons-path: "../../../../../assets/images/icons/menu/";
         float: left;
         width: 40px;
       }
-    }
 
-    a {
-      color: $light-color;
-      margin-top: 9px;
-      display: block;
-      margin-left: 50px;
+      a {
+        color: $light-color;
+        margin-top: 9px;
+        display: block;
+        margin-left: 50px;
+      }
+
+      a.active:after {
+        content: "";
+        opacity: 1;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: calc(50% - 13px);
+        width: 0;
+        height: 0;
+        border-top: 13px solid transparent;
+        border-right: 13px solid #ebebeb;
+        border-bottom: 13px solid transparent;
+      }
     }
   }
 }

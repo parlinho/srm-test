@@ -14,21 +14,21 @@ export class EconomicGroupSelectorComponent implements OnInit {
 
   @Output() economicGroupSelectorEmitter = new EventEmitter();
 
-  get groupDescription() { return this.economicGroupForm.get('groupDescription'); }
+  get description() { return this.economicGroupForm.get('description'); }
 
   onChange() {
     if (this.economicGroupForm.invalid) {
       return;
     }
     console.log(this.economicGroupForm.value);
-    this.economicGroupSelectorEmitter.emit(new EconomicGroup(this.groupDescription.value));
+    this.economicGroupSelectorEmitter.emit(new EconomicGroup(this.description.value));
   }
 
   constructor() { }
 
   ngOnInit() {
     this.economicGroupForm = new FormGroup({
-      'groupDescription': new FormControl(null, Validators.required)
+      'description': new FormControl(null, Validators.required)
     });
   }
 
