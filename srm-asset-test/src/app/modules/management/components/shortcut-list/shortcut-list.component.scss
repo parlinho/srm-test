@@ -1,0 +1,64 @@
+@import "../../../../shared/styles/variables";
+
+.shortcut-container {
+  height: 67vh;
+  background-color: $light-color;
+  -webkit-box-shadow: 0px 0px 20px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 20px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 20px -10px rgba(0, 0, 0, 0.75);
+
+  &__title {
+    border-bottom: 1px solid $dark-gray;
+    padding: 35px;
+
+    &--h3 {
+      margin: 0;
+    }
+  }
+
+  &__shortcut-list {
+    grid-template-columns: 70% 30%;
+    grid-template-rows: auto auto;
+
+    &--operational,
+    &--general {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 30px;
+
+      & h3 {
+        width: 100%;
+        margin: 0px 0px 1.5vh 0vw;
+      }
+
+      & a {
+        border: 1px solid $light-blue;
+        padding: 10px;
+        text-align: center;
+        display: block;
+        margin-bottom: 15px;
+      }
+    }
+
+    &--operational {
+      flex-direction: row;
+
+      .first-area {
+        width: calc(50% - 15px);
+      }
+      .second-area {
+        width: calc(50% - 15px);
+        margin-left: 30px;
+      }
+    }
+
+    &--general {
+      flex-direction: column;
+      border-left: 1px solid $dark-gray;
+
+      div {
+      }
+    }
+  }
+}

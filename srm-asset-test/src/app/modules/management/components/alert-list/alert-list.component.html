@@ -1,0 +1,29 @@
+<div class="alert-container">
+  <div class="alert-container__title">
+    <h3 class="alert-container__title--h3">Alertas</h3>
+    <p class="alert-container__title--p">Últimos 5 dias</p>
+  </div>
+  <div class="alert-container__alert-list">
+    <ul class="alert-container__alert-list--ul">
+      <li>
+        <p>23 Notas Canceladas</p>
+      </li>
+      <li>
+        <p>23 Notas Canceladas</p>
+        <select type="select" formControlName="groupDescription" name="groupDescription"
+          (change)="onChange($event.target.value)" class="economic-group-form__select">
+          <option value="visao1" disabled selected>Ações</option>
+          <option value="visao2"></option>
+        </select>
+      </li>
+      <li>
+        <p>7 Assinaturas Digitais</p>
+        <select type="select" formControlName="groupDescription" name="groupDescription"
+          (change)="onChange($event.target.value)" class="economic-group-form__select">
+          <option value="visao1" disabled selected>Ações</option>
+          <option value="visao2"></option>
+        </select>
+      </li>
+    </ul>
+  </div>
+</div>

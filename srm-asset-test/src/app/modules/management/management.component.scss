@@ -39,12 +39,18 @@
 .management-info {
   grid-template-columns: 0px 55% auto 0px;
   grid-template-rows: 0px auto;
-  grid-column-gap: 15px;
+  grid-column-gap: 20px;
   grid-row-gap: 30px;
 
   &__shortcut-list {
     grid-column-start: 2;
     grid-column-end: 2;
+    grid-row-start: 2;
+  }
+
+  &__alert-list{
+    grid-column-start: 3;
+    grid-column-end: 3;
     grid-row-start: 2;
   }
 }

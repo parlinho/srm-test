@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ShortcutsComponent } from './shortcuts.component';
+import { AlertListComponent } from './alert-list.component';
 
-describe('PanelComponent', () => {
-  let component: ShortcutsComponent;
-  let fixture: ComponentFixture<ShortcutsComponent>;
+describe('AlertListComponent', () => {
+  let component: AlertListComponent;
+  let fixture: ComponentFixture<AlertListComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ShortcutsComponent ]
+      declarations: [ AlertListComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ShortcutsComponent);
+    fixture = TestBed.createComponent(AlertListComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
