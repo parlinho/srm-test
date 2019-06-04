@@ -10,8 +10,16 @@
       </li>
       <li>
         <p>23 Notas Canceladas</p>
-        <select type="select" formControlName="action" name="action"
-          (change)="onChange($event.target.value)" class="alert-list-form__select">
+        <select type="select" name="action"
+          (change)="onChange($event.target.value)" class="economic-group-form__select">
+          <option value="visao1" disabled selected>Ações</option>
+          <option value="visao2"></option>
+        </select>
+      </li>
+      <li>
+        <p>7 Assinaturas Digitais</p>
+        <select type="select" name="action"
+          (change)="onChange($event.target.value)" class="economic-group-form__select">
           <option value="visao1" disabled selected>Ações</option>
           <option value="visao2"></option>
         </select>
