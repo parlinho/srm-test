@@ -11,17 +11,20 @@ app.get('/menu-items', function (req, res) {
     let menuItems = [{
         id: 0,
         title: 'Painel de Gestão',
-        routeLinks: '/'
+        icon: '../../../../../assets/images/icons/menu/icon-menu-1.png',
+        routeLink: '/'
     },
     {
         id: 1,
         title: 'Conta Digital',
-        routeLinks: '/digital-account'
+        icon: '../../../../../assets/images/icons/menu/icon-menu-2.png',
+        routeLink: '/digital-account'
     },
     {
         id: 2,
         title: 'Ant. de Recebíveis',
-        routeLinks: '/receivables'
+        icon: '../../../../../assets/images/icons/menu/icon-menu-3.png',
+        routeLink: '/receivables'
     }
     ];
 

@@ -4,7 +4,10 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: '', component: ManagementComponent
+    path: '', component: ManagementComponent,
+  },
+  {
+    path: '**', redirectTo: '/'
   }
 ]
 

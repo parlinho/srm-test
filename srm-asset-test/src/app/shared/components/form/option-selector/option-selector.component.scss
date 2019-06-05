@@ -18,10 +18,13 @@
   }
 
   &__select {
-    height: 45px;
-    width: 170px;
-    padding-left: 10px;
+    height: 5.4vh;
+    width: 25vh;
+    padding-left: 1vh;
+    padding-right: 1.5vh;
     border: 1px solid $light-blue;
     appearance: none;
+    text-align: center;
+    text-align-last: center;
   }
 }

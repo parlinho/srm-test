@@ -1,16 +1,8 @@
 <nav class="container-sidebar-menu">
   <ul class="container-sidebar-menu__ul">
-    <li class="container-sidebar-menu__ul--li">
-      <img src="../../../../../assets/images/icons/menu/icon-menu-globe.png" class="icon-menu" alt="Ícone globo" />
-      <a class="active">Painel de Gestão</a>
-    </li>
-    <li class="container-sidebar-menu__ul--li">
-      <img src="../../../../../assets/images/icons/menu/icon-menu-at.png" class="icon-menu" alt="Ícone arroba" />
-      <a>Conta Digital</a>
-    </li>
-    <li class="container-sidebar-menu__ul--li">
-      <img src="../../../../../assets/images/icons/menu/icon-menu-graph.png" class="icon-menu" alt="Ícone gráfico" />
-      <a>Ant. de Recebíveis</a>
+    <li class="container-sidebar-menu__ul--li" *ngFor="let item of menuItems">
+      <img [src]="item.icon" class="icon-menu" [alt]="item.title" />
+      <a routerLink="{{ item.routeLink }}" routerLinkActive="active" [href]="item.routeLink">{{ item.title }}</a>
     </li>
   </ul>
 </nav>

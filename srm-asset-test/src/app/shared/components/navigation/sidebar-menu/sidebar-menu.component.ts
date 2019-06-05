@@ -1,3 +1,4 @@
+import { MenuItem } from './../../../models/menu.model';
 import { SidebarMenuService } from './sidebar-menu.service';
 import { Component, OnInit } from '@angular/core';
 
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidebarMenuComponent implements OnInit {
 
-  public menuItems: Array<any>;
+  public menuItems: Array<MenuItem>;
 
   public getMenuItems() {
     this.SidebarMenuService.getMenuItems().subscribe(

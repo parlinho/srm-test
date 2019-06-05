@@ -11,9 +11,13 @@
   & * {
     float: right;
   }
+  &__prev,
+  &__select {
+    height: 46px;
+  }
+
   &__prev {
     width: 46px;
-    height: 46px;
     float: left;
     background-color: $dark-blue;
 
@@ -34,7 +38,6 @@
   }
 
   &__select {
-    height: 46px;
     float: left;
     background-color: $dark-blue;
     color: $light-color;
