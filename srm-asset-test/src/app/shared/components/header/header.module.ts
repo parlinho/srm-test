@@ -1,23 +1,23 @@
+import { FormModule } from './../form/form-module';
+import { SharedModule } from './../shared.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HeaderComponent } from './header.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { EconomicGroupSelectorComponent } from './economic-group-selector/economic-group-selector.component';
 import { UserAreaComponent } from './user-area/user-area.component';
 
 @NgModule({
   declarations: [
     HeaderComponent,
-    EconomicGroupSelectorComponent,
     UserAreaComponent],
   imports: [
     CommonModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormModule
   ],
   exports: [
     HeaderComponent,
-    EconomicGroupSelectorComponent,
     UserAreaComponent
   ]
 })

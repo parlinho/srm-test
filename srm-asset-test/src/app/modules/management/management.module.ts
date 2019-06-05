@@ -1,26 +1,32 @@
+import { FormModule } from './../../shared/components/form/form-module';
+import { SharedModule } from './../../shared/components/shared.module';
+import { AlertListService } from './components/alert-list/alert-list.service';
 import { ShortcutListComponent } from './components/shortcut-list/shortcut-list.component';
 import { ManagementComponent } from './management.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AlertListComponent } from './components/alert-list/alert-list.component';
-import { ProductSelectorComponent } from './components/product-selector/product-selector.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
     ManagementComponent,
     ShortcutListComponent,
     AlertListComponent,
-    ProductSelectorComponent
   ],
   imports: [
     CommonModule,
-    ReactiveFormsModule
+    FormsModule,
+    SharedModule,
+    FormModule
   ],
   exports: [
     ShortcutListComponent,
-    AlertListComponent,
-    ProductSelectorComponent
+    AlertListComponent
+  ],
+  providers: [
+    AlertListService
   ]
 })
 export class ManagementModule { }

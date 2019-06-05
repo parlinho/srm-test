@@ -1,5 +1,5 @@
 <header class="header-grid grid">
   <img class="header-grid__logo" src="../../../../assets/images/logos/srm-logojpg.jpg" alt="">
-  <app-economic-group-selector class="header-grid__economic-group-selector"></app-economic-group-selector>
+  <app-option-selector-double-arrow class="header-grid__aggregated-vision-select" [optionList]="aggregatedViews" (selected)="selectAggregatedViewsOption($event)"></app-option-selector-double-arrow>
   <app-user-area class="header-grid__user-area"></app-user-area>
 </header>

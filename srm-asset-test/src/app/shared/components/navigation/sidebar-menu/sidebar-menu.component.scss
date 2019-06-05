@@ -39,6 +39,23 @@ $icons-path: "../../../../../assets/images/icons/menu/";
         display: block;
         margin-left: 3vw;
         font-size: 15px;
+        cursor: pointer;
+      }
+
+      a:hover{
+          &:after {
+            font-family: "Font Awesome 5 Free";
+            content: "\f101";
+            display: inline-block;
+            padding-right: 3px;
+            vertical-align: middle;
+            font-weight: 900;
+            position: absolute;
+            right: 7px;
+            top: 19px;
+            font-size: 22px;
+            color: $light-blue;
+          }
       }
 
       a.active:after {

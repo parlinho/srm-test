@@ -1,11 +1,16 @@
 <div class="management-grid grid">
-  <nav class="management-grid__nav">Página inicial > Painel de Gestão</nav>
+  <app-bread-crumb class="management-grid__bread-crumb" [paths]="paths"></app-bread-crumb>
   <div class="management-grid__title">
     <img class="management-grid__title--image"
       src="../../../assets/images/icons/management-panel/icon-globe-inverted.png" alt="Ícone globo">
     <h1 class="management-grid__title--h1">Painel de Gestão</h1>
   </div>
-  <app-product-selector class="management-grid__product-selector"></app-product-selector>
+  <div class="container-product-selector">
+    <p>Produto: </p>
+    <app-option-selector-double-arrow class="management-grid__product-selector" [optionList]="productList"
+      (selected)="selectProductOption($event)"></app-option-selector-double-arrow>
+  </div>
+
 </div>
 <div class="management-info grid">
   <app-shortcut-list class="management-info__shortcut-list"></app-shortcut-list>

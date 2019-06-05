@@ -1,0 +1,28 @@
+@import '../../../styles/variables';
+
+.container-selector {
+    float: right;
+    position: relative;
+  
+    &:after {
+      font-family: "Font Awesome 5 Free";
+      content: "\f103";
+      display: inline-block;
+      padding-right: 3px;
+      vertical-align: middle;
+      font-weight: 900;
+      position: absolute;
+      right: 7px;
+      top: 13px;
+      color: $light-blue;
+    }
+  
+    &__select {
+      height: 45px;
+      width: 170px;
+      padding-left: 10px;
+      border: 1px solid $light-blue;
+      appearance: none;
+    }
+  }
+  

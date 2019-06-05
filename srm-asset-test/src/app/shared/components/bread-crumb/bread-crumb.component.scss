@@ -1,0 +1,22 @@
+.bread-crumb__ul {
+  list-style-type: none;
+  padding: 0px 0px 0px 10px;
+  margin: 0;
+
+  li {
+    float: left;
+    font-size: 13px;
+
+    &:after{
+        display: inline-block;
+        content: '>';
+        margin: 0 10px;
+    }
+
+    &:last-child{
+        &:after{
+            display: none;
+        }
+    }
+  }
+}

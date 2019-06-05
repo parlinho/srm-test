@@ -1,5 +1,6 @@
-import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { AlertListService } from './alert-list.service';
 import { Component, OnInit } from '@angular/core';
+import { Option } from 'src/app/shared/models/option.model';
 
 @Component({
   selector: 'app-alert-list',
@@ -8,14 +9,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AlertListComponent implements OnInit {
 
-  public actionSelect : FormGroup;
+  public actionItems: Array<Option>
 
-  constructor() { }
+  public getActionItems() {
+    this.AlertListService.getActionList().subscribe(
+      (response: Array<Option>) => {
+        this.actionItems = response;
+        console.log('action items: ', this.actionItems);
+      }, error => {
+        console.log('Throw error: ', error);
+      }
+    )
+  }
+
+  public selectActionOption(event) {
+    console.log(event);
+  }
+
+  constructor(private AlertListService: AlertListService) { }
 
   ngOnInit() {
-    this.actionSelect = new FormGroup({
-      'product': new FormControl(null, Validators.required)
-    });
+    this.getActionItems();
   }
 
 }

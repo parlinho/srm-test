@@ -1,0 +1,5 @@
+<div class="container-selector">
+  <select (change)="onChange()" [(ngModel)]="selected" class="container-selector__select">
+    <option [ngValue]="option" *ngFor="let option of optionList">{{ option.description }}</option>
+  </select>
+</div>

@@ -7,6 +7,7 @@
 }
 
 .user-area-form {
+  position: relative;
   & * {
     float: right;
   }
@@ -19,6 +20,19 @@
     background-image: url("../../../../../assets/images/icons/header/avatar.png");
   }
 
+  &:after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f103";
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+    font-weight: 900;
+    position: absolute;
+    right: 60px;
+    top: 13px;
+    color: $light-blue;
+  }
+
   &__select {
     height: 46px;
     float: left;
@@ -27,6 +41,7 @@
     min-width: 150px;
     padding: 0px 5px;
     border: none;
+    appearance: none;
   }
 
   &__select:focus {

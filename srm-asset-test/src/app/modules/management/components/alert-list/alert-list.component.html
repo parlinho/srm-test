@@ -10,19 +10,11 @@
       </li>
       <li>
         <p>23 Notas Canceladas</p>
-        <select type="select" name="action"
-          (change)="onChange($event.target.value)" class="economic-group-form__select">
-          <option value="visao1" disabled selected>Ações</option>
-          <option value="visao2"></option>
-        </select>
+        <app-option-selector [optionList]="actionItems" (selected)="selectActionOption($event)"></app-option-selector>
       </li>
       <li>
         <p>7 Assinaturas Digitais</p>
-        <select type="select" name="action"
-          (change)="onChange($event.target.value)" class="economic-group-form__select">
-          <option value="visao1" disabled selected>Ações</option>
-          <option value="visao2"></option>
-        </select>
+        <app-option-selector [optionList]="actionItems" (selected)="selectActionOption($event)"></app-option-selector>
       </li>
     </ul>
   </div>

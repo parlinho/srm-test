@@ -1,9 +1,0 @@
-<form [formGroup]="productSelectorForm" class="product-selector-form">
-    <label for="productSelector" class="product-selector-form__label">Produto: </label>
-    <select type="select" formControlName="product" name="product" (change)="onChange($event.target.value)"
-      class="product-selector-form__select">
-      <option value="product1" [selected]="true">Todos</option>
-      <option value="product2">Produto 1</option>
-      <option value="product3">Produto 2</option>
-    </select>
-  </form>

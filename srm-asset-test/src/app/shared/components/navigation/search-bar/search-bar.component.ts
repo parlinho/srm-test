@@ -20,6 +20,7 @@ export class SearchBarComponent implements OnInit {
     if (this.searchForm.invalid) {
       return;
     }
+    console.log(this.searchTerms.value);
     this.searchTermsEmitter.emit(new Search(this.searchTerms.value));
   }
 
